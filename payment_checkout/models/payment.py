@@ -18,7 +18,7 @@ _logger = logging.getLogger(__name__)
 class AcquirerPaypal(models.Model):
     _inherit = 'payment.acquirer'
 
-    provider = fields.Selection(selection_add=[('checkout', 'Checkout')])
+    provider = fields.Selection(selection_add=[('checkout', 'Checkout.com')])
     checkout_secret_key = fields.Char('Secret Key')
     chekout_publishable_key = fields.Char('Published Key')
 

@@ -11,6 +11,8 @@
     'depends': ['payment'],
     'data': [
         'views/payment_views.xml',
+        'views/payment_checkout_templates.xml',
+        'data/payment_acquirer_data.xml',
     ],
     'installable': True,
 }
