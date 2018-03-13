@@ -7,12 +7,20 @@
             <field name="image" type="base64" file="payment_checkout/static/src/img/checkout.png"/>
             <field name="company_id" ref="base.main_company"/>
             <field name="view_template_id" ref="checkout_acquirer_button"/>
-            <!--field name="registration_view_template_id" ref="custom_s2s_form"/-->
+	    <field name="description" type="html">
+            <p>
+                A payment gateway to accept online payments.
+            </p>
+            <ul>
+                <li><i class="fa fa-check"/>eCommerce</li>
+            </ul>
+            </field>
             <field name="environment">test</field>
             <field name="pre_msg"><![CDATA[
-<p>You will be prompt with Checkout Payment page for payment information.</p>]]></field>
-            <field name="checkout_secret_key">dummy</field>
-            <field name="chekout_publishable_key">dummy</field>
+<p>You will be redirected to the Checkout.com website after clicking on the payment button.</p>]]></field>
+            <field name="checkout_username">dummy</field>
+            <field name="checkout_password">dummy</field>
+            <field name="checkout_url">file:///home/sagar/Desktop/123/checkout.html</field>
         </record>
     </data>
 </odoo>
